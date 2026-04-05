@@ -10,14 +10,14 @@
 [![License](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 ![Downloads](https://img.shields.io/github/downloads/jyahyah/tac-installer/total?style=flat-square)
 
-A modern, lightweight graphical installer for [TAC Writer](https://github.com/narayanls/tac-writer), built with **Go** and **Zenity**. This tool simplifies the installation process for Linux users, automatically fetching the latest version of the software directly from the source.
+A modern, lightweight graphical installer for [Tac Writer](https://github.com/narayanls/tac-writer), built with **Go** and **Zenity**. This tool simplifies the installation process for Linux users, automatically fetching the latest version of the software directly from the source.
 
 ---
 
 ## 🚀 Features
 
 * **GUI Interface:** Friendly graphical dialogs powered by Zenity.
-* **Version Control:** Automatically checks for new versions and downloads the latest release from the [official TAC Writer repository](https://github.com/narayanls/tac-writer).
+* **Version Control:** Automatically checks for new versions and downloads the latest release from the [official Tac Writer repository](https://github.com/narayanls/tac-writer).
 * **Universal Compatibility:** Supports virtually all Linux distributions (Ubuntu, Fedora, Arch, Debian, openSUSE, Solus, etc.).
 * **Streamlined Process:** No need for complex terminal commands; just follow the visual prompts.
 
