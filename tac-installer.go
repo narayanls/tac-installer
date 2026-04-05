@@ -20,7 +20,7 @@ const (
 
 	AppInstallDir = "/usr/share/tac-writer"
 
-	SuseDeps = "typelib-1_0-Gtk-4_0 typelib-1_0-Adw-1 libadwaita-1-0 python312-dropbox python313 python313-gobject python313-reportlab python313-pygtkspellcheck python313-pyenchant python313-Pillow python313-requests python313-pypdf python313-PyLaTeX gettext-runtime liberation-fonts myspell-pt_BR myspell-en_US myspell-es"
+	
 )
 
 type DistroInfo struct {
@@ -394,8 +394,7 @@ func getUninstallCmd(distro DistroInfo) string {
 		return "apt remove -y " + AppName
 	case strings.Contains(distro.ID, "fedora") || strings.Contains(distro.IDLike, "fedora"):
 		return "dnf remove -y " + AppName
-	case strings.Contains(distro.ID, "suse") || strings.Contains(distro.IDLike, "suse"):
-		return "zypper --non-interactive remove -y " + AppName
+	
 	}
 	return ""
 }
@@ -604,14 +603,6 @@ INSTALL_FLOW:
 			suffix = ".rpm"
 			installCmd = "dnf install -y"
 
-			if strings.Contains(distro.ID, "suse") || strings.Contains(distro.IDLike, "suse") {
-				cmdDeps := fmt.Sprintf("pkexec zypper --non-interactive install -y %s", SuseDeps)
-				errDeps := exec.Command("bash", "-c", cmdDeps).Run()
-				if errDeps != nil {
-					fmt.Println("Aviso: Falha ao instalar dependências do SUSE ou cancelado pelo usuário.")
-				}
-				installCmd = "zypper --non-interactive install -y --allow-unsigned-rpm"
-			}
 
 		default:
 			zenityError("Distribuição não suportada para o modo Nativo. Tente via Flatpak.")
