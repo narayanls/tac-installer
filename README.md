@@ -11,6 +11,7 @@
 ![Downloads](https://img.shields.io/github/downloads/narayanls/tac-installer/total?style=flat-square)
 
 A modern, lightweight graphical installer for [Tac Writer](https://github.com/narayanls/tac-writer), built with **Go** and **Zenity**. This tool simplifies the installation process for Linux users, automatically fetching the latest version of the software directly from the source.
+Tac Installer was originally created by Jibreel al-Yahya under GPL 2 license. Now it is mentioned only by Narayan Silva.
 
 ---
 
