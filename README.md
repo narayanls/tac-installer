@@ -55,45 +55,11 @@ Before building and running the installer, you must install **Go** and **Zenity*
 
 ## 📥 How to Install & Run
 
-Since there are no pre-compiled releases, follow these steps to build the installer from source:
-
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/jyahyah/tac-installer.git
-    cd tac-installer
-    ```
-
-2.  **Build the installer:**
-    ```bash
-    go build -o tac-installer
-    ```
-
-3.  **Run the application:**
-
-    ### Via Terminal
-    ```bash
-    ./tac-installer
-    ```
-
     ### Via File Manager (GUI)
     1. Right-click the file `tac-installer`.
     2. Go to **Properties** > **Permissions**.
     3. Check the box **"Allow executing file as program"** (or similar).
     4. **Double-click** the file to launch.
-
----
-
-## ⚙️ How it Works
-
-<p align="center">
-  <img src="assets/workflow.png" alt="Installation Workflow" width="500">
-</p>
-
-The installer follows a simple, automated workflow:
-
-1.  **API Query:** It pings the GitHub API of the [TAC Writer repository](https://github.com/narayanls/tac-writer) to find the most recent tag/release.
-2.  **Environment Check:** Verifies if the system is compatible and has the necessary permissions.
-3.  **Download & Setup:** Downloads the latest assets and configures the application on your system via the Zenity GUI.
 
 ---
 
