@@ -1,4 +1,4 @@
-# TAC Writer Installer
+# Tac Writer Installer
 
 <p align="center">
   <img src="Screenshots/Screenshot.png" alt="TAC Writer Installer Screenshot" width="600">
